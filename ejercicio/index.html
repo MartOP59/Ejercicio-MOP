@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio de BDD</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    
+</head>
+
+<body>
+ 
+    <div class="container">
+        <div class="table-responsive">
+            <table id="tablaUsuarios" name="tablaUsuarios" class="table table-striped  table-condensed" style="width:100%">
+                <thead class="text-center">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>                                
+                        <th>Fecha Nacimiento</th>  
+                        <th>Fecha Registro En Sistema</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla01">                           
+                </tbody>  
+            </table>
+        </div>
+    </div>
+
+    <div class="container">
+        <form id="formAgregar">    
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label for="" class="col-form-label">Nombre</label>
+                            <input type="text" class="form-control" id="Nombre">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label for="" class="col-form-label">Apellidos</label>
+                            <input type="text" class="form-control" id="Apellidos">
+                        </div> 
+                    </div>    
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label for="" class="col-form-label">Fecha Nacimiento</label>
+                            <input type="date" class="form-control" id="fechaNacimiento">
+                        </div>
+                    </div>    
+                </div>                
+            </div>
+            <button type="submit" id="btnGuardar" class="btn btn-dark">Agregar</button>
+        </form>    
+        
+    </div>
+
+    <div class="container"> 
+        <div class="container">
+            <div class="table-responsive">
+                <table id="tablaUsuarios" name="tablaUsuarios" class="table table-striped  table-condensed" style="width:100%">
+                    <thead class="text-center">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Apellidos</th>                                
+                            <th>Fecha Nacimiento</th>  
+                            <th>Fecha Registro En Sistema</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla02">                           
+                    </tbody>  
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/tabla.js"></script>
+</body>
+
+</html>
